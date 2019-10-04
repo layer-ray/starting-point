@@ -1,0 +1,53 @@
+@import "../../globalScss/shared";
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    top: -100px;
+}
+
+.alert {
+    position: absolute;
+    width: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.error {
+    border: 1px solid $danger-dark; 
+    background-color: $danger-light;
+    color: $danger-dark;
+}
+
+.success {
+    border: 1px solid $success-dark; 
+    background-color: $success-light;
+    color: $success-dark;
+}
+
+.enter {
+    animation-name: enter;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.exit {
+    animation-name: exit;
+    animation-duration: 0.5s;
+}
+
+@keyframes enter {
+    from {top: 0;}
+    to  {top: 200px;}
+}
+
+@keyframes exit {
+    from {top: 200px;}
+    to  {top: 0;}
+}

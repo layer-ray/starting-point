@@ -1,0 +1,41 @@
+@import "../../globalScss//shared";
+
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 300px;
+    border-radius: 15px;
+    border: 3px ridge $secondary-dark;
+    margin: 3rem auto;
+}
+
+.form-field {
+    text-align: center;
+    padding: 1rem;
+    font-family: $main-font;
+
+    label {
+        padding: 0.25rem;
+        display: block;
+    }
+
+    input[type=text], 
+    input[type=email] {
+        padding-top: 0.25rem;
+        border: none;
+        border-bottom: 1px solid $secondary-dark;
+        text-align: center;
+
+        &:focus {
+            box-shadow: -1px -1px 2px $secondary-light, 1px -1px 2px $secondary-light;
+        }
+    }
+}
+
+.button {
+    @include btn;
+    background-color: $secondary-dark;
+    color: $primary-dark;
+    padding: 0.6rem;
+    width: 75%;
+}

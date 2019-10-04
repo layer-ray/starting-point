@@ -1,0 +1,29 @@
+// colors
+
+$primary: #fff;
+$primary-light: #fff;
+$primary-dark: #ccc;
+
+$secondary: #2a3747;
+$secondary-light: #546172;
+$secondary-dark: #011120;
+
+$danger: #fa4141;
+$danger-light: #ec7c7c;
+$danger-dark: #8d1414;
+
+$success: #3a4;
+$success-light: #7ce78c;
+$success-dark: #327747;
+
+// fonts
+$main-font: Tahoma, Geneva, sans-serif;
+
+@mixin btn {
+    background: none;
+    font: inherit;
+    border: none;
+    border-radius: 0;
+
+    cursor: pointer;
+}

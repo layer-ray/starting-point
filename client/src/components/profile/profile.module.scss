@@ -1,0 +1,47 @@
+@import "../../globalScss/shared";
+
+.list {
+    margin: 7rem auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+div > dt, div > dd {
+    overflow: auto;
+    width: 50%;
+    padding: 1rem;
+    text-align: center;
+    display: inline-block;
+}
+
+div > dt {border: 1px solid $secondary-dark;}
+div > dd {border: 1px dotted $secondary-dark;}
+
+.footer {
+    text-align: center;
+}
+
+.button {
+    @include btn;
+    background-color: $danger;
+    color: $primary-light;
+    
+    padding: 1rem 0.75rem;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px){
+    div > dt{
+        width: 8rem;
+    } 
+    
+    div > dd {
+        width: 30%;
+        text-align: left;
+        padding-left: 1rem;
+    }
+    div > dt {
+        text-align: end;
+        padding-right: 1rem;
+    }
+}

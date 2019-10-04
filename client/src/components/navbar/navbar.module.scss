@@ -1,0 +1,26 @@
+@import "../../globalScss/shared";
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+
+    background-color: $secondary;
+    a {
+        color: $primary-dark;
+    }
+}
+
+.nav-button {
+    @include btn;
+    color: $primary-dark;
+}
+
+.headline {
+    text-align: center;
+    font: bold 1.5rem Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-bottom: 0.5rem solid $secondary-dark;
+}

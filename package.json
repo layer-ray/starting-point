@@ -1,0 +1,9 @@
+{
+  "name": "starting-point",
+  "version": "1.0.0",
+  "description": "Basic template with react, scss modules, express, base user management",
+  "main": "index.js",
+  "author": "Layer",
+  "license": "MIT",
+  "dependencies": {}
+}
